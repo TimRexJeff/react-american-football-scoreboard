@@ -1,7 +1,10 @@
 //DONE: STEP 1 - Import the useState hook.
 import React, { useState } from "react";
 import "./App.css";
-import BottomRow from "./BottomRow";
+import Down from "./Down";
+import ToGo from "./ToGo"
+import BallOn from "./BallOn"
+import Quarter from "./Quarter"
 
 function App() {
   //DONE: STEP 2 - Establish your applictaion's state with some useState hooks.
@@ -28,7 +31,12 @@ function App() {
             <div className="away__score">{tigersScore}</div>
           </div>
         </div>
-        <BottomRow />
+          <div className="bottomRow">
+            <Down />
+            <ToGo />
+            <BallOn />
+            <Quarter />
+          </div>
       </section>
       <section className="buttons">
         <div className="homeButtons">
